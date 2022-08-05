@@ -127,7 +127,8 @@ h2, #subtitle{
 /* menu responsivo( hamburguer ) */
 i.menu-mobile {
   position: fixed;
-  color: #fff; 
+  color: #fff;
+  background-color: #6d6b6b; 
   right: 1rem;
   top: 1rem;
   font-size: 1.5rem;
@@ -179,4 +180,8 @@ i.menu-mobile {
 }
 *::-webkit-scrollbar-thumb{
   background-color: #6d6b6b;
+}
+/* seção habilidades */
+.section-bg{
+  background-color: #eff5ff;
 }
