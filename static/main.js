@@ -25,3 +25,26 @@ navItem.forEach(item => {
     }
   })
 })
+/**
+ * Função animação  para barra scroll  pelo atributo data-anime
+ */
+
+const item = document.querySelectorAll('[data-anime]')
+//pega a posição do item na window
+const animeScroll = () => {
+  const windowTop = window.pageYOffset + window.innerHeight * 0.85
+  // se o windowtop for maior que o topo do element add a class animate
+  item.forEach(element => {
+    if (windowTop > element.offsetTop) {
+      element.classList.add('animate')
+    } else {
+      //remove a class animate
+      element.classList.remove('animate')
+    }
+  })
+}
+animeScroll()
+
+window.addEventListener('scroll', () => {
+  animeScroll()
+})
