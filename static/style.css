@@ -163,7 +163,8 @@ i.menu-mobile {
   }
   section#inicio span#subtitle{
     margin-right: 0;
-    font-size: 1rem;
+    font-size: 35px;
+    font-weight: 500;
   }
   #main{
     margin-left: 0;
@@ -279,3 +280,14 @@ i.menu-mobile {
   }
 }
 
+/* loader spinner */
+#btn-loader{
+  display: none; 
+}
+/* alerta de envio de mensagem */
+#alerta{
+  position: fixed;
+  z-index: 10;
+  top:30px;
+  right:30px;
+}
